@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,20 +22,28 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val BtnCadastro = findViewById<Button>(R.id.btnCadastro)
+        val btnCadastro = findViewById<ImageView>(R.id.bntCadastro)
 
-        BtnCadastro.setOnClickListener {
+        btnCadastro.setOnClickListener {
             val intent = Intent(this, CadastroActivity::class.java)
 
             startActivity(intent)
 
 
         }
-        val bntLogin = findViewById<Button>(R.id.btnLogin)
+        val bntLogin = findViewById<ImageView>(R.id.bntLogin)
 
         bntLogin.setOnClickListener {
-            val email = findViewById<EditText>(R.id.editTextEmail).text
+            val email = findViewById<EditText>(R.id.editTextEmail).text.toString()
             val senha = findViewById<EditText>(R.id.editTextSenha).text.toString()
+
+            if(email.equals("teste@gmail.com") && senha.equals("12345")){
+
+                val login = Intent(this, LoginActivity::class.java)
+                intent.putExtra("nome", "Ricardo")
+                startActivity(login)
+
+            }
             if(email.isEmpty() || senha.isEmpty()){
                 Toast.makeText(this, "Usuario ou senha invalido", Toast.LENGTH_LONG).show()
             }else{
