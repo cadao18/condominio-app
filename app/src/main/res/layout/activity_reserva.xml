@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/murak"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservaActivity">
+
+    <ImageView
+        android:id="@+id/imgFundo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cond_tres" />
+
+    <Button
+        android:id="@+id/btnAcademia"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="ACADEMIA"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+
+    <TextView
+        android:id="@+id/normasAcademia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="
+• Uso obrigatório de toalha
+• Limite de 1 hora por usuário
+• Proibido uso sem camiseta
+• Higienizar equipamentos após uso
+• Proibido menores desacompanhados
+"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAcademia" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Reservatoolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIconTint="@android:color/white"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="RESERVA"
+        app:titleTextColor="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

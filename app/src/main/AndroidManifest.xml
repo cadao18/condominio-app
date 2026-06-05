@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CondService">
         <activity
+            android:name=".MuralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AutorizacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReservaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BoletoActivity"
+            android:exported="false" />
+        <activity
             android:name=".CadastroActivity"
             android:exported="false" />
         <activity
