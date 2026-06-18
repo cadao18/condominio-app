@@ -13,7 +13,7 @@ import com.example.condservice.R
 class BoletoAdapter (private  val boletos : List<Boleto>) : RecyclerView.Adapter<BoletoAdapter.BoletoViewHolder>(){
 
     class BoletoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val titulo: TextView = itemView.findViewById(R.id.txtTitulo)
+        val titulo: TextView = itemView.findViewById(R.id.txtTituloEsqueceu)
         val valor: TextView = itemView.findViewById(R.id.txtValor)
         val vencimento: TextView = itemView.findViewById(R.id.txtVencimento)
     }

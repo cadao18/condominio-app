@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,19 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val esqueceu = findViewById<TextView>(R.id.textEsqueceu)
+
+        esqueceu.setOnClickListener {
+
+            val email = findViewById<EditText>(R.id.editTextEmail).text.toString()
+
+            val intent = Intent(this, EsqueceuActivity::class.java)
+
+            intent.putExtra("email", email)
+
+            startActivity(intent)
+
         }
 
         val btnCadastro = findViewById<ImageView>(R.id.bntCadastro)

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EsqueceuActivity">
+
+    <ImageView
+        android:id="@+id/imgFundo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/cond_tres"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTituloEsqueceu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu a Senha?"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="220dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEmailEsqueceu"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:hint="Endereço de email*"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMsgEsqueceu">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmailEsqueceu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEnviarEsqueceu"
+        android:layout_width="320dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#80000000"
+        android:text="Enviar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutEmailEsqueceu" />
+
+    <TextView
+        android:id="@+id/textMsgEsqueceu"
+        android:layout_width="312dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:text="Insira seu endereço de e-mail e enviaremos instruções para redefinir sua senha"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloEsqueceu" />
+
+    <TextView
+        android:id="@+id/textVoltarEsqueceu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Voltar para Login"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviarEsqueceu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

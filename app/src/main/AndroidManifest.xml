@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CondService">
         <activity
+            android:name=".PortariaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MudancaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrestacaoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MuralActivity"
             android:exported="false" />
         <activity
@@ -38,6 +47,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".EsqueceuActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

@@ -14,110 +14,106 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/cond_tres"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cond_tres" />
 
     <!-- Nome -->
-    <EditText
-        android:id="@+id/editTextName"
+    <TextView
+        android:id="@+id/textName"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginTop="280dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:gravity="center"
         android:hint="Nome"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Linha 1 -->
     <Button
         android:id="@+id/BOLETO"
         android:layout_width="150dp"
         android:layout_height="54dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@android:color/white"
         android:text="BOLETO"
         android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/editTextName"
+        app:layout_constraintTop_toBottomOf="@id/textName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/ReservaBtn"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginStart="44dp" />
 
     <Button
         android:id="@+id/ReservaBtn"
         android:layout_width="150dp"
         android:layout_height="54dp"
+        android:backgroundTint="@android:color/white"
         android:text="RESERVA"
         android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/white"
         app:layout_constraintTop_toTopOf="@id/BOLETO"
         app:layout_constraintStart_toEndOf="@id/BOLETO"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:layout_marginStart="20dp" />
 
     <!-- Linha 2 -->
     <Button
         android:id="@+id/buttonAutorizacao"
         android:layout_width="150dp"
         android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/white"
         android:text="AUTORIZAÇÃO"
         android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/BOLETO"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/buttonMural"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="@id/BOLETO" />
 
     <Button
         android:id="@+id/buttonMural"
         android:layout_width="150dp"
         android:layout_height="54dp"
+        android:backgroundTint="@android:color/white"
         android:text="MURAL"
         android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/white"
         app:layout_constraintTop_toTopOf="@id/buttonAutorizacao"
-        app:layout_constraintStart_toEndOf="@id/buttonAutorizacao"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintStart_toStartOf="@id/ReservaBtn" />
 
     <!-- Linha 3 -->
     <Button
         android:id="@+id/buttonContas"
         android:layout_width="150dp"
         android:layout_height="54dp"
-        android:text="PRESTAÇÃO DE CONTAS"
-        android:textSize="11sp"
-        android:textColor="@android:color/black"
+        android:layout_marginTop="27dp"
         android:backgroundTint="@android:color/white"
+        android:text="PRESTAÇÃO DE CONTAS"
+        android:textColor="@android:color/black"
+        android:textSize="11sp"
         app:layout_constraintTop_toBottomOf="@id/buttonAutorizacao"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/buttonMudanca"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="@id/buttonAutorizacao" />
 
     <Button
         android:id="@+id/buttonMudanca"
         android:layout_width="150dp"
         android:layout_height="54dp"
+        android:backgroundTint="@android:color/white"
         android:text="MUDANÇA"
         android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/white"
         app:layout_constraintTop_toTopOf="@id/buttonContas"
-        app:layout_constraintStart_toEndOf="@id/buttonContas"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintStart_toStartOf="@id/buttonMural" />
 
     <!-- Botão final -->
     <Button
         android:id="@+id/buttonContato"
         android:layout_width="wrap_content"
         android:layout_height="54dp"
+        android:layout_marginTop="42dp"
+        android:backgroundTint="@android:color/white"
         android:text="CONTATOS COM A PORTARIA"
         android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/buttonContas"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

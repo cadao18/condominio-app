@@ -7,7 +7,7 @@
     android:padding="12dp">
 
     <TextView
-        android:id="@+id/txtTitulo"
+        android:id="@+id/txtTituloEsqueceu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Condominio"
@@ -24,7 +24,7 @@
         android:text="R$ 150,00"
         android:textSize="16sp"
         android:textColor="@android:color/black"
-        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloEsqueceu"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"/>
 
